@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get tix - the lean theater</title>
+    <style>
+        body {
+            background-color: #300033;
+            color: #fff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 3px dotted #cc00ff;
+            border-radius: 15px;
+            background-color: rgba(51, 0, 51, 0.9);
+            box-shadow: 0 0 15px rgba(204, 0, 255, 0.6);
+        }
+
+        .qr-code {
+            width: 200px;
+            height: auto;
+            margin: 10px 0;
+            border: 3px solid #cc00ff;
+            border-radius: 10px;
+        }
+
+        .address {
+            font-size: 18px;
+            margin: 10px 0;
+            text-shadow: 2px 2px 0 #9900cc;
+        }
+
+        .map-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #cc00ff;
+            color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(204, 0, 255, 0.8);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .map-link:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(204, 0, 255, 1);
+        }
+
+        .showtime {
+            font-size: 20px;
+            margin-top: 15px;
+            text-shadow: 1px 1px 2px #660066;
+        }
+
+        .back-link {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 6px 12px;
+            background: #660066;
+            color: #fff;
+            font-size: 14px;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(153, 0, 204, 0.6);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .back-link:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 12px rgba(153, 0, 204, 0.9);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>4 tix, sned some dough to this venmo bruh. wright the moooovie name</h1>
+        
+        <h3>or come to the Q the day of! but that more expeeeeensive</h3>
+        
+        <img src="/imigez/qr.png" alt="QR Code" class="qr-code">
+
+        <p class="address"><b>707 park way, berkeley, ca 94710</b></p>
+        <a href="https://maps.app.goo.gl/mFSNpki6kKvGDwoy6" class="map-link" target="_blank">open in maps</a>
+
+        <p class="showtime">showings are sunday at 7PM!</p>
+
+        <a href="index.html" class="back-link">back to lean theater</a>
+    </div>
+
+</body>
+</html>
