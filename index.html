@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the lean theater</title>
     <style>
-@import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Comic+Sans+MS&display=swap');
         
         :root {
             --rotate: 0deg;
@@ -686,6 +686,32 @@
             opacity: 0.3;
             z-index: 10;
         }
+        
+        .get-tix-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background: var(--purple-bright);
+            color: #fff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-size: 14px;
+            text-transform: lowercase;
+            border: 2px solid var(--purple-dark);
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(204, 0, 255, 0.6);
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .get-tix-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 12px rgba(204, 0, 255, 0.9);
+        }
+
+        .movie-row {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -716,7 +742,7 @@
             
             <div class="movie-container">
                 
-                <div class="movie-row">
+                <div class="movie-row" onclick="window.location.href='/tix.html'">
                     <div class="poster-wrapper">
                         <div class="poster-tape"></div>
                         <img src="/imigez/0.jpg" alt="Movie Poster" class="movie-poster">
@@ -725,16 +751,14 @@
                     <div class="movie-info">
                         <h2 class="movie-title dripping-text">
                             smial <span class="floating-emoji">😬</span>
-                            <span class="drip" style="left: 10px;"></span>
-                            <span class="drip" style="left: 30px; animation-delay: 1s;"></span>
-                            <span class="drip" style="left: 50px; animation-delay: 2s;"></span>
                         </h2>
                         <p class="movie-date">sunday, march 16</p>
                         <p class="movie-description">dooood dis mooovee got me seein facesss erywhere!! spooooky viiibz n scary teef!! my eyez cant unsee da thingzz!!</p>
+                        <a href="/tix.html" class="get-tix-button">get tix</a>
                     </div>
                 </div>
                 
-                <div class="movie-row">
+                <div class="movie-row" onclick="window.location.href='/tix.html'">
                     <div class="poster-wrapper">
                         <div class="poster-tape"></div>
                         <img src="/imigez/1.jpg" alt="Movie Poster" class="movie-poster">
@@ -744,10 +768,11 @@
                         <h2 class="movie-title">tha truman sho <span class="rotating-emoji">🤯</span></h2>
                         <p class="movie-date">sundae, march 23 </p>
                         <p class="movie-description">bruuuhhhzzz wut even iz relty?? jim caree makin me qwestshun EVRYTHIN!! mi brain iz melllltinnnn... woaaaaah!!</p>
+                        <a href="/tix.html" class="get-tix-button">get tix</a>
                     </div>
                 </div>
                 
-                <div class="movie-row">
+                <div class="movie-row" onclick="window.location.href='/tix.html'">
                     <div class="poster-wrapper">
                         <div class="poster-tape"></div>
                         <img src="/imigez/2.jpg" alt="Movie Poster" class="movie-poster">
@@ -757,10 +782,11 @@
                         <h2 class="movie-title">shopliftrz <span class="floating-emoji">🤫</span></h2>
                         <p class="movie-date">sundey, march 30</p>
                         <p class="movie-description">japeneese flikkk wit mad feeeelzz!! famlee doin stufff n im jus sittin here cryyyyn in mah drank!! cant even xplainn!!</p>
+                        <a href="/tix.html" class="get-tix-button">get tix</a>
                     </div>
                 </div>
                 
-                                <div class="movie-row">
+                <div class="movie-row" onclick="window.location.href='/tix.html'">
                     <div class="poster-wrapper">
                         <div class="poster-tape"></div>
                         <img src="/imigez/3.jpg" alt="Movie Poster" class="movie-poster">
@@ -770,6 +796,7 @@
                         <h2 class="movie-title">the shinning <span class="floating-emoji">🔪</span></h2>
                         <p class="movie-date">sundae, aprile 6 </p>
                         <p class="movie-description">skarrreeeee hotellll movieee!! axsss n dooorzzz n weeeird stuffzz!! jak nikkulsn face got me hidin undrrr my beddd forrreverrr!!</p>
+                        <a href="/tix.html" class="get-tix-button">get tix</a>
                     </div>
                 </div>
             </div>
